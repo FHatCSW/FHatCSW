@@ -166,14 +166,14 @@ ul {
 
 li {
     margin-bottom: 0.5rem;
+    margin-left: 0;
+    padding-left: 1.2em;
+    text-indent: -1.2em;
     color: var(--gray-dark);
-    padding-left: 0;
-    text-indent: 0;
 }
 
 li::before {
     content: "• ";
-    font-weight: bold;
     color: var(--black);
 }
 

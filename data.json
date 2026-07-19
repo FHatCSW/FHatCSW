@@ -19,7 +19,7 @@
   },
   "aboutMe": {
     "paragraphs": [
-      "I combine engineering pragmatism with deep technical expertise in applied cryptography and industrial cybersecurity. With a background in mechanical engineering, I understand how the industry works. I then moved into software and security, gaining in-depth knowledge through hands-on experience.",
+      "I combine engineering pragmatism with technical expertise in applied cryptography and industrial cybersecurity. With a background in mechanical engineering, I understand how the industry works. I then moved into software and security, gaining in-depth knowledge through hands-on experience.",
       "I thrive on taking ownership, leading technical teams, speaking at conferences, teaching students and engineers, and building solutions that solve real-world problems. I love details, thinking end-to-end, and presenting complex content to different audiences. I specialize in turning complex security concepts into practical engineering solutions that balance technical feasibility with cost-effectiveness—because security is always a tradeoff."
     ]
   },
@@ -122,8 +122,8 @@
     "teachingPublicSpeaking": {
       "title": "Teaching & Public Speaking",
       "items": [
-        "Part-time lecturer at DHBW Stuttgart",
-        "Part-time lecturer at University of Stuttgart",
+        "Part-time lecturer at DHBW Stuttgart (Industrial Security)",
+        "Part-time lecturer at University of Stuttgart (Industrial Security)",
         "Industrial security trainings & workshops (📄 Applied Cryptography Training)",
         "Conference speaker & presenter",
         "Author of technical articles (ATP, embedded world conference, IT-SICHERHEIT, IT&Produktion)"
@@ -276,6 +276,16 @@
         "period": "2012 – 2015",
         "degree": "Bachelor of Engineering (B.Eng.), Production Engineering",
         "institution": "Duale Hochschule Baden-Württemberg"
+      },
+      {
+        "period": "2011 – 2012",
+        "degree": "University of Applied Sciences Entrance Qualification",
+        "institution": "Berufskolleg Horb a.N."
+      },
+      {
+        "period": "2007 – 2011",
+        "degree": "Apprenticeship as a Precision Mechanic",
+        "institution": "Koch Pac Systeme GmbH"
       }
     ]
   },
@@ -283,12 +293,8 @@
     "I live in a small village in the Black Forest, Baden-Württemberg, with my wife and two daughters.",
     "I play football as a hobby.",
     "Hands-on engineer who loves taking action and building things.",
-    "I thrive on taking the lead and motivating people.",
     "Every good concept starts with a sequence diagram.",
-    "I love details and thinking end-to-end—which is kind of a must in security.",
     "Good user experience matters—even (especially!) in security software.",
-    "Most of the time, you'll see me smiling.",
-    "I like to structure things and present complex content to different audiences.",
     "The world has lost a carpenter and an electrician in me—I'm an expert in building trade show exhibits.",
     "I probably have the right adapter for your plug."
   ],

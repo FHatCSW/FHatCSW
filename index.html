@@ -9,6 +9,7 @@
           content="Head of Industrial Security at Campus Schwarzwald specializing in Applied Cryptography, PKI, Device Identity, and Industrial Cybersecurity.">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js"></script>
 
 </head>
 
@@ -16,29 +17,8 @@
 
 <header>
 
-<div class="container">
-
-<div style="display: flex; align-items: center; gap: 3rem; flex-wrap: wrap; margin-bottom: 2rem;">
-<img src="assets/img/florian_handke.JPG" alt="Florian Handke" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid white;">
-<div style="flex: 1; min-width: 300px;">
-<h1 style="margin-bottom: 0.5rem;">Florian Handke</h1>
-
-<p class="subtitle">
-Head of Industrial Security · Campus Schwarzwald · M.Sc. Mechanical Engineering
-</p>
-</div>
-</div>
-
-<p style="font-size: 1.1rem; line-height: 1.7; color: var(--gray-light);">
-Head of Industrial Security at Campus Schwarzwald, a cluster of companies in the mechanical engineering and
-manufacturing industries. Holding a Master's degree (M.Sc.) in Mechanical Engineering with a specialization in
-Production Engineering, I am responsible for ensuring the security of industrial machinery and components. My
-expertise focuses on Public Key Infrastructure (PKI), digital identities, and their applications in industrial
-environments.
-</p>
-
-
-
+<div class="container" id="header-content">
+<!-- Content will be loaded from JSON -->
 </div>
 
 </header>
@@ -49,18 +29,9 @@ environments.
 
 <h2>About Me</h2>
 
-<p>
-I combine engineering pragmatism with deep technical expertise in applied cryptography and industrial cybersecurity.
-With a background in mechanical engineering, I understand how the industry works. I then moved into software and
-security, gaining in-depth knowledge through hands-on experience.
-</p>
-
-<p>
-I thrive on taking ownership, leading technical teams, speaking at conferences, teaching students and engineers, and
-building solutions that solve real-world problems. I love details, thinking end-to-end, and presenting complex content
-to different audiences. I specialize in turning complex security concepts into practical engineering solutions that
-balance technical feasibility with cost-effectiveness—because security is always a tradeoff.
-</p>
+<div id="about-me-content">
+<!-- Content will be loaded from JSON -->
+</div>
 
 </div>
 
@@ -72,75 +43,8 @@ balance technical feasibility with cost-effectiveness—because security is alwa
 
 <h2>Core Expertise</h2>
 
-<div class="grid">
-
-<div class="card">
-<h3>Applied Cryptography</h3>
-
-<ul>
-<li>Public Key Infrastructure (PKI)</li>
-<li>Certificate Lifecycle Management</li>
-<li>Device Identity & Secure Device Identity</li>
-<li>Secure Boot & Secure Firmware Updates</li>
-<li>Code Signing</li>
-<li>Hardware Security Modules (HSMs)</li>
-<li>PKCS#11 API Implementation (Python)</li>
-<li>PKCS#x Standards</li>
-<li>EST, CMP, OCSP Protocols</li>
-<li>ASN.1 (the challenging kind!)</li>
-<li>Keyfactor EJBCA & SignServer</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Industrial Security</h3>
-
-<ul>
-<li>IEC 62443 Compliance</li>
-<li>Cyber Resilience Act (CRA) Assessment</li>
-<li>NIS2 Directive</li>
-<li>Security Architecture & Risk Assessment</li>
-<li>Industrial IoT & OT Security</li>
-<li>Expertise in IEEE 802.1 AR device identities (IDevID & LDevID)</li>
-<li>Expertise in zero-touch onboarding (BRSKI, FDO)</li>
-
-</ul>
-</div>
-
-<div class="card">
-<h3>IoT & Connectivity</h3>
-
-<ul>
-<li>OPC UA (Implemented GDS Push)</li>
-<li>MQTT Protocol</li>
-<li>Grafana & Visualization</li>
-<li>Telegraf Data Collection</li>
-<li>InfluxDB Time-Series Database</li>
-<li>Node-RED (Published 2 NPM packages)</li>
-<li>Mosquitto MQTT Broker</li>
-<li>Mender OTA Updates</li>
-<li>Raspberry Pi & ESP32 Development</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Software Engineering</h3>
-
-<ul>
-<li>Python (Django, uv)</li>
-<li>Shell Scripting</li>
-<li>Docker & Containerization</li>
-<li>GitHub Actions & CI/CD</li>
-<li>CodeQL & Static Code Analysis</li>
-<li>SBOM (CycloneDX, SPDX)</li>
-<li>OpenSSF Best Practices & Badges</li>
-<li>OWASP ZAP Security Testing</li>
-<li>Static Typing & Linting</li>
-<li>Test Coverage & Automated Testing</li>
-<li>Dependency Management</li>
-</ul>
-</div>
-
+<div class="grid" id="core-expertise-content">
+<!-- Content will be loaded from JSON -->
 </div>
 
 </div>
@@ -153,33 +57,8 @@ balance technical feasibility with cost-effectiveness—because security is alwa
 
 <h2>Featured Project</h2>
 
-<div style="background: var(--white); color: var(--black); padding: 3rem; margin-top: 2rem; border: 4px solid var(--black);">
-
-<h3 style="color: var(--black); border-bottom: 3px solid var(--black); padding-bottom: 0.75rem; margin-bottom: 1.5rem; font-size: 2rem;">
-Trustpoint – Open Source Trust Anchor
-</h3>
-
-<p style="color: var(--gray-dark); font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
-Co-created and technically led the development of <strong><a href="https://github.com/Trustpoint-Project/trustpoint" target="_blank" style="color: var(--black); border-bottom: 2px solid var(--black);">Trustpoint</a></strong>, an open-source trust anchor and PKI
-platform developed together with contributors from multiple organizations.
-
-Trustpoint is a platform for managing digital machine identities and certificate lifecycles in industrial environments. It supports secure device onboarding, certificate issuance, renewal, revocation, and decommissioning using standardized protocols and can operate locally in segmented, offline, or air-gapped OT networks. By combining automation, user-friendly workflows, and vendor-independent standards, Trustpoint helps manufacturers, integrators, and operators reduce security risks and implement trustworthy industrial communication without requiring deep PKI expertise.
-</p>
-
-<img src="assets/img/trustpoint_architecture.png" alt="Trustpoint Architecture" style="width: 100%; max-width: 1000px; margin: 2rem auto; display: block;">
-
-<div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem;">
-<a href="assets/pdf/trustpoint_july_2026.pdf" target="_blank" style="display: inline-block; padding: 12px 24px; background: var(--black); color: var(--white); font-weight: 600; border: 2px solid var(--black); text-decoration: none;">
-📄 Trustpoint Overview (July 2026)
-</a>
-<a href="assets/pdf/trustpoint_ew_2026.pdf" target="_blank" style="display: inline-block; padding: 12px 24px; background: transparent; color: var(--black); font-weight: 600; border: 2px solid var(--black); text-decoration: none;">
-📄 Zero-Touch Onboarding (AOKI)
-</a>
-<a href="https://github.com/Trustpoint-Project/trustpoint" target="_blank" style="display: inline-block; padding: 12px 24px; background: transparent; color: var(--black); font-weight: 600; border: 2px solid var(--black); text-decoration: none;">
-💻 GitHub Repository
-</a>
-</div>
-
+<div style="background: var(--white); color: var(--black); padding: 3rem; margin-top: 2rem; border: 4px solid var(--black);" id="featured-project-content">
+<!-- Content will be loaded from JSON -->
 </div>
 
 </div>
@@ -192,52 +71,8 @@ Trustpoint is a platform for managing digital machine identities and certificate
 
 <h2>Leadership & Community</h2>
 
-<div class="grid">
-
-<div class="card">
-
-<h3>Technical Leadership</h3>
-
-<ul>
-<li>Led multidisciplinary development teams</li>
-<li>Architected security solutions</li>
-<li>Technical mentoring & motivation</li>
-<li>Disciplinary Management of Employees</li>
-<li>Proposal writing (German & EU Horizon) — Last one (EU Horizon) called PQCUA (sadly not accepted): Implementing Post-Quantum Cryptography into OSS OPC UA SDKs (open62541 and S2OPC)</li>
-<li>Trade show planning, exhibits & demonstrations (Hannover Messe, SPS, embedded world, all about automation)</li>
-<li>Event planning and execution</li>
-</ul>
-
-</div>
-
-<div class="card">
-
-<h3>Teaching & Public Speaking</h3>
-
-<ul>
-<li>Part-time lecturer at DHBW Stuttgart</li>
-<li>Part-time lecturer at University of Stuttgart</li>
-<li>Industrial security trainings & workshops (<a href="assets/pdf/training_applied_crypto.pdf" target="_blank">📄 Applied Cryptography Training</a>)</li>
-<li>Conference speaker & presenter</li>
-<li>Author of technical articles (ATP, embedded world conference, IT-SICHERHEIT, IT&Produktion)</li>
-</ul>
-
-</div>
-
-<div class="card">
-
-<h3>Community & Events</h3>
-
-<ul>
-<li>VDMA Industrial Security Working Group</li>
-<li>Open Industry 4.0 Working Group</li>
-<li>Organizer: PKI in der Automatisierungstechnik (since 2023)</li>
-<li>Organizer: OT-Security Forum</li>
-<li>Organizer: OT-Security Breakfast</li>
-</ul>
-
-</div>
-
+<div class="grid" id="leadership-community-content">
+<!-- Content will be loaded from JSON -->
 </div>
 
 </div>
@@ -250,34 +85,9 @@ Trustpoint is a platform for managing digital machine identities and certificate
 
 <h2>Talks & Keynotes</h2>
 
-<ul>
-
-<li><strong>Automated Identity Management for Embedded Components</strong> — embedded world conference, March 2026</li>
-<li><strong>Industrial trust anchor</strong> — all about automation, March 2026</li>
-
-<li><strong>Digital Identities for the industry</strong> — SPS Messe, November 2025</li>
-<li><strong>Industrial Security at Campus Schwarzwald</strong> — OT Security Breakfast, Oktober 2025</li>
-<li><strong>Cryptography and Legal Requirements for Businesses </strong> — Campus Schwarzwald, Mai 2025</li>
-<li><strong>Certificate Management Made Easy – Practical Solutions for Machinery and Plant Operators</strong> — Hannover Messe, April 2025</li>
-<li><strong>Securing Industry 4.0 with Digital Identities for Embedded Components</strong> — embedded world conference, March 2025</li>
-<li><strong>The rising importance of managed certificates in industrial systems</strong> — embedded world conference, March 2025</li>
-<li><strong>From Emmental to Gouda: Why Cybersecurity Is Now a Management Issue  </strong> — Business Breakfast, February 2025</li>
-
-<li><strong>Digital trust</strong> — Campus Cyber Paris, December 2024</li>
-<li><strong>How PKI can help you meet the Cyber Resilience Act</strong> — PKI in der Automatisierungstechnik, September 2024</li>
-<li><strong>Digital identities for a secure industry</strong> — 20. Deutscher IT-Sicherheitskongress, April 2024</li>
-<li><strong>Why Trust is the foundation for the connected factory</strong> — Cyber Security Symposium, March 2024</li>
-<li><strong>Building Trust in the Factory Through Digital Identities</strong> — RWTH Aachen, March 2024</li>
-
-<li><strong>Digital Identities for Machines—How Does It Really Work?</strong> — Security unter Kontrolle, September 2023</li>
-<li><strong>Open Industrial PKI: From the Idea to Implementation</strong> — TeleTrusT EBCA PKI Workshop, September 2023</li>
-<li><strong>Device identities according to IEEE 802.1 AR</strong> — online, July 2023</li>
-<li><strong>Implementing code signing in low-cost controllers</strong> — embedded world, March 2023</li>
-<li><strong>Open industrial PKI</strong> — Keyfactor Tech Days, February 2023</li>
-
-<li><strong>Digital Machine Identities as a Key Component of Industrial Security ​</strong> — VDMA working group, September 2022</li>
-
-</ul>
+<div id="talks-keynotes-content">
+<!-- Content will be loaded from JSON -->
+</div>
 
 </div>
 
@@ -285,70 +95,12 @@ Trustpoint is a platform for managing digital machine identities and certificate
 
 <section>
 
-
-
-<section>
-
 <div class="container">
 
 <h2>Professional Timeline</h2>
 
-<div style="max-width: 900px; margin: 0 auto;">
-
-<h3 style="color: var(--black); margin-top: 2rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--black); padding-bottom: 0.5rem;">Work Experience</h3>
-
-<div style="border-left: 3px solid var(--black); padding-left: 2rem; margin-left: 1rem;">
-
-<div style="margin-bottom: 2.5rem; position: relative;">
-<div style="position: absolute; left: -2.4rem; top: 0.3rem; width: 1rem; height: 1rem; background: var(--black); border-radius: 50%;"></div>
-<p style="margin: 0; color: var(--gray-medium); font-size: 0.9rem;">Sept. 2023 – Present · 2 years 11 months</p>
-<h4 style="margin: 0.5rem 0; font-size: 1.3rem;">Head of Industrial Security</h4>
-<p style="margin: 0.25rem 0; color: var(--gray-dark);">Campus Schwarzwald</p>
-</div>
-
-<div style="margin-bottom: 2.5rem; position: relative;">
-<div style="position: absolute; left: -2.4rem; top: 0.3rem; width: 1rem; height: 1rem; background: var(--black); border-radius: 50%;"></div>
-<p style="margin: 0; color: var(--gray-medium); font-size: 0.9rem;">Jan. 2021 – Aug. 2023 · 2 years 8 months</p>
-<h4 style="margin: 0.5rem 0; font-size: 1.3rem;">Smart Production Engineer</h4>
-<p style="margin: 0.25rem 0; color: var(--gray-dark);">Campus Schwarzwald</p>
-</div>
-
-<div style="margin-bottom: 2.5rem; position: relative;">
-<div style="position: absolute; left: -2.4rem; top: 0.3rem; width: 1rem; height: 1rem; background: var(--black); border-radius: 50%;"></div>
-<p style="margin: 0; color: var(--gray-medium); font-size: 0.9rem;">Apr. 2018 – Dec. 2020 · 2 years 9 months</p>
-<h4 style="margin: 0.5rem 0; font-size: 1.3rem;">Data Scientist: Condition Monitoring of Laser Devices</h4>
-<p style="margin: 0.25rem 0; color: var(--gray-dark);">TRUMPF</p>
-</div>
-
-<div style="margin-bottom: 2.5rem; position: relative;">
-<div style="position: absolute; left: -2.4rem; top: 0.3rem; width: 1rem; height: 1rem; background: var(--black); border-radius: 50%;"></div>
-<p style="margin: 0; color: var(--gray-medium); font-size: 0.9rem;">Oct. 2015 – Sept. 2016 · 1 year</p>
-<h4 style="margin: 0.5rem 0; font-size: 1.3rem;">Customer and Project Manager</h4>
-<p style="margin: 0.25rem 0; color: var(--gray-dark);">Andreas Lupold Hydrotechnik GmbH</p>
-</div>
-
-</div>
-
-<h3 style="color: var(--black); margin-top: 3rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--black); padding-bottom: 0.5rem;">Education</h3>
-
-<div style="border-left: 3px solid var(--black); padding-left: 2rem; margin-left: 1rem;">
-
-<div style="margin-bottom: 2.5rem; position: relative;">
-<div style="position: absolute; left: -2.4rem; top: 0.3rem; width: 1rem; height: 1rem; background: var(--black); border-radius: 50%;"></div>
-<p style="margin: 0; color: var(--gray-medium); font-size: 0.9rem;">2016 – 2018</p>
-<h4 style="margin: 0.5rem 0; font-size: 1.3rem;">Master of Science (M.Sc.), Advanced Precision Engineering</h4>
-<p style="margin: 0.25rem 0; color: var(--gray-dark);">Hochschule Furtwangen</p>
-</div>
-
-<div style="margin-bottom: 2.5rem; position: relative;">
-<div style="position: absolute; left: -2.4rem; top: 0.3rem; width: 1rem; height: 1rem; background: var(--black); border-radius: 50%;"></div>
-<p style="margin: 0; color: var(--gray-medium); font-size: 0.9rem;">2012 – 2015</p>
-<h4 style="margin: 0.5rem 0; font-size: 1.3rem;">Bachelor of Engineering (B.Eng.), Production Engineering</h4>
-<p style="margin: 0.25rem 0; color: var(--gray-dark);">Duale Hochschule Baden-Württemberg</p>
-</div>
-
-</div>
-
+<div style="max-width: 900px; margin: 0 auto;" id="professional-timeline-content">
+<!-- Content will be loaded from JSON -->
 </div>
 
 </div>
@@ -361,31 +113,9 @@ Trustpoint is a platform for managing digital machine identities and certificate
 
 <h2>A Few Things About Me</h2>
 
-<ul>
-
-<li>I live in a small village in the Black Forest, Baden-Württemberg, with my wife and two daughters.</li>
-
-<li>I play football as a hobby.</li>
-
-<li>Hands-on engineer who loves taking action and building things.</li>
-
-<li>I thrive on taking the lead and motivating people.</li>
-
-<li>Every good concept starts with a sequence diagram.</li>
-
-<li>I love details and thinking end-to-end—which is kind of a must in security.</li>
-
-<li>Good user experience matters—even (especially!) in security software.</li>
-
-<li>Most of the time, you'll see me smiling.</li>
-
-<li>I like to structure things and present complex content to different audiences.</li>
-
-<li>The world has lost a carpenter and an electrician in me—I'm an expert in building trade show exhibits.</li>
-
-<li>I probably have the right adapter for your plug.</li>
-
-</ul>
+<div id="personal-facts-content">
+<!-- Content will be loaded from JSON -->
+</div>
 
 </div>
 
@@ -397,32 +127,8 @@ Trustpoint is a platform for managing digital machine identities and certificate
 
 <h2>Impressions</h2>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
-
-<div style="border: 3px solid var(--black); overflow: hidden; aspect-ratio: 4/3;">
-<img src="assets/img/hmi_2025.png" alt="Hannover Messe 2025" style="width: 100%; height: 100%; object-fit: cover;">
-</div>
-
-<div style="border: 3px solid var(--black); overflow: hidden; aspect-ratio: 4/3;">
-<img src="assets/img/demo_sps.jpeg" alt="SPS Demo" style="width: 100%; height: 100%; object-fit: cover;">
-</div>
-
-<div style="border: 3px solid var(--black); overflow: hidden; aspect-ratio: 4/3;">
-<img src="assets/img/campus_cyber.JPG" alt="Campus Cyber" style="width: 100%; height: 100%; object-fit: cover;">
-</div>
-
-<div style="border: 3px solid var(--black); overflow: hidden; aspect-ratio: 4/3;">
-<img src="assets/img/crypto_training.jpeg" alt="Cryptography Training" style="width: 100%; height: 100%; object-fit: cover;">
-</div>
-
-<div style="border: 3px solid var(--black); overflow: hidden; aspect-ratio: 4/3;">
-<img src="assets/img/phish_chips.png" alt="Phish & Chips" style="width: 100%; height: 100%; object-fit: cover;">
-</div>
-
-<div style="border: 3px solid var(--black); overflow: hidden; aspect-ratio: 4/3;">
-<img src="assets/img/sticker.png" alt="Trustpoint Sticker" style="width: 100%; height: 100%; object-fit: cover;">
-</div>
-
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;" id="impressions-content">
+<!-- Content will be loaded from JSON -->
 </div>
 
 </div>
@@ -431,22 +137,8 @@ Trustpoint is a platform for managing digital machine identities and certificate
 
 <footer>
 
-<div class="container">
-
-
-
-<p style="text-align: left; max-width: 600px; margin: 0 auto 2rem;">
-<strong>Phone:</strong> <a href="tel:+4915155360339">+49 151 553 603 39</a><br>
-<strong>Email:</strong> <a href="mailto:handke.florian@web.de">handke.florian@web.de</a><br>
-<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/florian-handke/" target="_blank">linkedin.com/in/florian-handke</a>
-</p>
-
-<hr style="border: none; border-top: 1px solid var(--gray-medium); margin: 2rem auto; max-width: 600px;">
-
-<p style="font-size: 0.9rem;">
-© 2026 Florian Handke
-</p>
-
+<div class="container" id="footer-content">
+<!-- Content will be loaded from JSON -->
 </div>
 
 </footer>

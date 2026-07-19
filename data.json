@@ -1,0 +1,337 @@
+{
+  "meta": {
+    "charset": "UTF-8",
+    "viewport": "width=device-width, initial-scale=1.0",
+    "title": "Florian Handke | Head of Industrial Security",
+    "description": "Head of Industrial Security at Campus Schwarzwald specializing in Applied Cryptography, PKI, Device Identity, and Industrial Cybersecurity."
+  },
+  "header": {
+    "image": {
+      "src": "assets/img/florian_handke.JPG",
+      "alt": "Florian Handke",
+      "width": "200px",
+      "height": "200px",
+      "borderRadius": "50%"
+    },
+    "name": "Florian Handke",
+    "subtitle": "Head of Industrial Security · Campus Schwarzwald · M.Sc. Mechanical Engineering",
+    "introduction": "Head of Industrial Security at Campus Schwarzwald, a cluster of companies in the mechanical engineering and manufacturing industries. Holding a Master's degree (M.Sc.) in Mechanical Engineering with a specialization in Production Engineering, I am responsible for ensuring the security of industrial machinery and components. My expertise focuses on Public Key Infrastructure (PKI), digital identities, and their applications in industrial environments."
+  },
+  "aboutMe": {
+    "paragraphs": [
+      "I combine engineering pragmatism with deep technical expertise in applied cryptography and industrial cybersecurity. With a background in mechanical engineering, I understand how the industry works. I then moved into software and security, gaining in-depth knowledge through hands-on experience.",
+      "I thrive on taking ownership, leading technical teams, speaking at conferences, teaching students and engineers, and building solutions that solve real-world problems. I love details, thinking end-to-end, and presenting complex content to different audiences. I specialize in turning complex security concepts into practical engineering solutions that balance technical feasibility with cost-effectiveness—because security is always a tradeoff."
+    ]
+  },
+  "coreExpertise": {
+    "appliedCryptography": {
+      "title": "Applied Cryptography",
+      "items": [
+        "Public Key Infrastructure (PKI)",
+        "Certificate Lifecycle Management",
+        "Device Identity & Secure Device Identity",
+        "Secure Boot & Secure Firmware Updates",
+        "Code Signing",
+        "Hardware Security Modules (HSMs)",
+        "PKCS#11 API Implementation (Python)",
+        "PKCS#x Standards",
+        "EST, CMP, OCSP Protocols",
+        "ASN.1 (the challenging kind!)",
+        "Keyfactor EJBCA & SignServer"
+      ]
+    },
+    "industrialSecurity": {
+      "title": "Industrial Security",
+      "items": [
+        "IEC 62443 Compliance",
+        "Cyber Resilience Act (CRA) Assessment",
+        "NIS2 Directive",
+        "Security Architecture & Risk Assessment",
+        "Industrial IoT & OT Security",
+        "Expertise in IEEE 802.1 AR device identities (IDevID & LDevID)",
+        "Expertise in zero-touch onboarding (BRSKI, FDO)"
+      ]
+    },
+    "iotConnectivity": {
+      "title": "IoT & Connectivity",
+      "items": [
+        "OPC UA (Implemented GDS Push)",
+        "MQTT Protocol",
+        "Grafana & Visualization",
+        "Telegraf Data Collection",
+        "InfluxDB Time-Series Database",
+        "Node-RED (Published 2 NPM packages)",
+        "Mosquitto MQTT Broker",
+        "Mender OTA Updates",
+        "Raspberry Pi & ESP32 Development"
+      ]
+    },
+    "softwareEngineering": {
+      "title": "Software Engineering",
+      "items": [
+        "Python (Django, uv)",
+        "Shell Scripting",
+        "Docker & Containerization",
+        "GitHub Actions & CI/CD",
+        "CodeQL & Static Code Analysis",
+        "SBOM (CycloneDX, SPDX)",
+        "OpenSSF Best Practices & Badges",
+        "OWASP ZAP Security Testing",
+        "Static Typing & Linting",
+        "Test Coverage & Automated Testing",
+        "Dependency Management"
+      ]
+    }
+  },
+  "featuredProject": {
+    "title": "Trustpoint – Open Source Trust Anchor",
+    "description": "Co-created and technically led the development of Trustpoint, an open-source trust anchor and PKI platform developed together with contributors from multiple organizations. Trustpoint is a platform for managing digital machine identities and certificate lifecycles in industrial environments. It supports secure device onboarding, certificate issuance, renewal, revocation, and decommissioning using standardized protocols and can operate locally in segmented, offline, or air-gapped OT networks. By combining automation, user-friendly workflows, and vendor-independent standards, Trustpoint helps manufacturers, integrators, and operators reduce security risks and implement trustworthy industrial communication without requiring deep PKI expertise.",
+    "githubUrl": "https://github.com/Trustpoint-Project/trustpoint",
+    "image": {
+      "src": "assets/img/trustpoint_architecture.png",
+      "alt": "Trustpoint Architecture"
+    },
+    "links": [
+      {
+        "text": "📄 Trustpoint Overview (July 2026)",
+        "url": "assets/pdf/trustpoint_july_2026.pdf"
+      },
+      {
+        "text": "📄 Zero-Touch Onboarding (AOKI)",
+        "url": "assets/pdf/trustpoint_ew_2026.pdf"
+      },
+      {
+        "text": "💻 GitHub Repository",
+        "url": "https://github.com/Trustpoint-Project/trustpoint"
+      }
+    ]
+  },
+  "leadershipCommunity": {
+    "technicalLeadership": {
+      "title": "Technical Leadership",
+      "items": [
+        "Led multidisciplinary development teams",
+        "Architected security solutions",
+        "Technical mentoring & motivation",
+        "Disciplinary Management of Employees",
+        "Proposal writing (German & EU Horizon) — Last one (EU Horizon) called PQCUA (sadly not accepted): Implementing Post-Quantum Cryptography into OSS OPC UA SDKs (open62541 and S2OPC)",
+        "Trade show planning, exhibits & demonstrations (Hannover Messe, SPS, embedded world, all about automation)",
+        "Event planning and execution"
+      ]
+    },
+    "teachingPublicSpeaking": {
+      "title": "Teaching & Public Speaking",
+      "items": [
+        "Part-time lecturer at DHBW Stuttgart",
+        "Part-time lecturer at University of Stuttgart",
+        "Industrial security trainings & workshops (📄 Applied Cryptography Training)",
+        "Conference speaker & presenter",
+        "Author of technical articles (ATP, embedded world conference, IT-SICHERHEIT, IT&Produktion)"
+      ],
+      "trainingPdf": "assets/pdf/training_applied_crypto.pdf"
+    },
+    "communityEvents": {
+      "title": "Community & Events",
+      "items": [
+        "VDMA Industrial Security Working Group",
+        "Open Industry 4.0 Working Group",
+        "Organizer: PKI in der Automatisierungstechnik (since 2023)",
+        "Organizer: OT-Security Forum",
+        "Organizer: OT-Security Breakfast"
+      ]
+    }
+  },
+  "talksKeynotes": [
+    {
+      "title": "Automated Identity Management for Embedded Components",
+      "event": "embedded world conference",
+      "date": "March 2026"
+    },
+    {
+      "title": "Industrial trust anchor",
+      "event": "all about automation",
+      "date": "March 2026"
+    },
+    {
+      "title": "Digital Identities for the industry",
+      "event": "SPS Messe",
+      "date": "November 2025"
+    },
+    {
+      "title": "Industrial Security at Campus Schwarzwald",
+      "event": "OT Security Breakfast",
+      "date": "Oktober 2025"
+    },
+    {
+      "title": "Cryptography and Legal Requirements for Businesses",
+      "event": "Campus Schwarzwald",
+      "date": "Mai 2025"
+    },
+    {
+      "title": "Certificate Management Made Easy – Practical Solutions for Machinery and Plant Operators",
+      "event": "Hannover Messe",
+      "date": "April 2025"
+    },
+    {
+      "title": "Securing Industry 4.0 with Digital Identities for Embedded Components",
+      "event": "embedded world conference",
+      "date": "March 2025"
+    },
+    {
+      "title": "The rising importance of managed certificates in industrial systems",
+      "event": "embedded world conference",
+      "date": "March 2025"
+    },
+    {
+      "title": "From Emmental to Gouda: Why Cybersecurity Is Now a Management Issue",
+      "event": "Business Breakfast",
+      "date": "February 2025"
+    },
+    {
+      "title": "Digital trust",
+      "event": "Campus Cyber Paris",
+      "date": "December 2024"
+    },
+    {
+      "title": "How PKI can help you meet the Cyber Resilience Act",
+      "event": "PKI in der Automatisierungstechnik",
+      "date": "September 2024"
+    },
+    {
+      "title": "Digital identities for a secure industry",
+      "event": "20. Deutscher IT-Sicherheitskongress",
+      "date": "April 2024"
+    },
+    {
+      "title": "Why Trust is the foundation for the connected factory",
+      "event": "Cyber Security Symposium",
+      "date": "March 2024"
+    },
+    {
+      "title": "Building Trust in the Factory Through Digital Identities",
+      "event": "RWTH Aachen",
+      "date": "March 2024"
+    },
+    {
+      "title": "Digital Identities for Machines—How Does It Really Work?",
+      "event": "Security unter Kontrolle",
+      "date": "September 2023"
+    },
+    {
+      "title": "Open Industrial PKI: From the Idea to Implementation",
+      "event": "TeleTrusT EBCA PKI Workshop",
+      "date": "September 2023"
+    },
+    {
+      "title": "Device identities according to IEEE 802.1 AR",
+      "event": "online",
+      "date": "July 2023"
+    },
+    {
+      "title": "Implementing code signing in low-cost controllers",
+      "event": "embedded world",
+      "date": "March 2023"
+    },
+    {
+      "title": "Open industrial PKI",
+      "event": "Keyfactor Tech Days",
+      "date": "February 2023"
+    },
+    {
+      "title": "Digital Machine Identities as a Key Component of Industrial Security ​",
+      "event": "VDMA working group",
+      "date": "September 2022"
+    }
+  ],
+  "professionalTimeline": {
+    "workExperience": [
+      {
+        "period": "Sept. 2023 – Present · 2 years 11 months",
+        "position": "Head of Industrial Security",
+        "company": "Campus Schwarzwald"
+      },
+      {
+        "period": "Jan. 2021 – Aug. 2023 · 2 years 8 months",
+        "position": "Smart Production Engineer",
+        "company": "Campus Schwarzwald"
+      },
+      {
+        "period": "Apr. 2018 – Dec. 2020 · 2 years 9 months",
+        "position": "Data Scientist: Condition Monitoring of Laser Devices",
+        "company": "TRUMPF"
+      },
+      {
+        "period": "Oct. 2015 – Sept. 2016 · 1 year",
+        "position": "Customer and Project Manager",
+        "company": "Andreas Lupold Hydrotechnik GmbH"
+      }
+    ],
+    "education": [
+      {
+        "period": "2016 – 2018",
+        "degree": "Master of Science (M.Sc.), Advanced Precision Engineering",
+        "institution": "Hochschule Furtwangen"
+      },
+      {
+        "period": "2012 – 2015",
+        "degree": "Bachelor of Engineering (B.Eng.), Production Engineering",
+        "institution": "Duale Hochschule Baden-Württemberg"
+      }
+    ]
+  },
+  "personalFacts": [
+    "I live in a small village in the Black Forest, Baden-Württemberg, with my wife and two daughters.",
+    "I play football as a hobby.",
+    "Hands-on engineer who loves taking action and building things.",
+    "I thrive on taking the lead and motivating people.",
+    "Every good concept starts with a sequence diagram.",
+    "I love details and thinking end-to-end—which is kind of a must in security.",
+    "Good user experience matters—even (especially!) in security software.",
+    "Most of the time, you'll see me smiling.",
+    "I like to structure things and present complex content to different audiences.",
+    "The world has lost a carpenter and an electrician in me—I'm an expert in building trade show exhibits.",
+    "I probably have the right adapter for your plug."
+  ],
+  "impressions": [
+    {
+      "src": "assets/img/hmi_2025.png",
+      "alt": "Hannover Messe 2025"
+    },
+    {
+      "src": "assets/img/demo_sps.jpeg",
+      "alt": "SPS Demo"
+    },
+    {
+      "src": "assets/img/campus_cyber.JPG",
+      "alt": "Campus Cyber"
+    },
+    {
+      "src": "assets/img/crypto_training.jpeg",
+      "alt": "Cryptography Training"
+    },
+    {
+      "src": "assets/img/phish_chips.png",
+      "alt": "Phish & Chips"
+    },
+    {
+      "src": "assets/img/sticker.png",
+      "alt": "Trustpoint Sticker"
+    }
+  ],
+  "contact": {
+    "phone": "+49 151 553 603 39",
+    "phoneUrl": "tel:+4915155360339",
+    "email": "handke.florian@web.de",
+    "emailUrl": "mailto:handke.florian@web.de",
+    "linkedin": "linkedin.com/in/florian-handke",
+    "linkedinUrl": "https://www.linkedin.com/in/florian-handke/"
+  },
+  "footer": {
+    "copyright": "© 2026 Florian Handke"
+  },
+  "assets": {
+    "css": [
+      "assets/css/style.css"
+    ]
+  }
+}

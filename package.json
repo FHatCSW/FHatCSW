@@ -1,5 +1,11 @@
 {
-  "dependencies": {
+  "name": "fhatcsw",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "generate-cv": "node scripts/generate-cv-pdf.mjs"
+  },
+  "devDependencies": {
     "playwright": "^1.61.1"
   }
 }

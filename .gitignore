@@ -1,0 +1,21 @@
+# Private data files
+data.private.json
+*.private.json
+
+# Generated PDFs with private data
+cv_private.pdf
+cv_florian_handke_private.pdf
+
+# Node modules (if you install dependencies)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

@@ -1,0 +1,19 @@
+{
+  "contact": {
+    "address": {
+      "street": "Musterstraße 123",
+      "city": "Musterstadt",
+      "postalCode": "12345",
+      "country": "Deutschland"
+    },
+    "phone": "+49 151 553 603 39",
+    "phoneUrl": "tel:+4915155360339",
+    "email": "handke.florian@web.de",
+    "emailUrl": "mailto:handke.florian@web.de"
+  },
+  "personalInfo": {
+    "dateOfBirth": "DD.MM.YYYY",
+    "placeOfBirth": "Your City",
+    "nationality": "German"
+  }
+}

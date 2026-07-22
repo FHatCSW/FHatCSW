@@ -15,6 +15,52 @@ const mimeTypes = {
     '.css': 'text/css',
 };
 
+/**
+ * Deep merge two objects
+ */
+function deepMerge(target, source) {
+    const output = { ...target };
+    
+    if (isObject(target) && isObject(source)) {
+        Object.keys(source).forEach(key => {
+            if (isObject(source[key])) {
+                if (!(key in target)) {
+                    output[key] = source[key];
+                } else {
+                    output[key] = deepMerge(target[key], source[key]);
+                }
+            } else {
+                output[key] = source[key];
+            }
+        });
+    }
+    
+    return output;
+}
+
+function isObject(item) {
+    return item && typeof item === 'object' && !Array.isArray(item);
+}
+
+/**
+ * Load and merge data files
+ */
+function loadData(rootDir) {
+    const publicDataPath = join(rootDir, 'data.json');
+    const privateDataPath = join(rootDir, 'data.private.json');
+    
+    const publicData = JSON.parse(readFileSync(publicDataPath, 'utf-8'));
+    
+    if (existsSync(privateDataPath)) {
+        console.log('✓ Found private data file, merging...');
+        const privateData = JSON.parse(readFileSync(privateDataPath, 'utf-8'));
+        return { data: deepMerge(publicData, privateData), hasPrivate: true };
+    } else {
+        console.log('ℹ No private data file found, using public data only');
+        return { data: publicData, hasPrivate: false };
+    }
+}
+
 function findAvailablePort(startPort = 3000) {
     return new Promise((resolve, reject) => {
         const server = createServer();
@@ -28,9 +74,16 @@ function findAvailablePort(startPort = 3000) {
     });
 }
 
-function startServer(rootDir, port) {
+function startServer(rootDir, mergedData, port) {
     return new Promise((resolve, reject) => {
         const server = createServer((req, res) => {
+            // Intercept data.json requests and return merged data
+            if (req.url === '/data.json') {
+                res.writeHead(200, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify(mergedData));
+                return;
+            }
+            
             let filePath = join(rootDir, req.url === '/' ? 'index.html' : req.url);
             
             if (!existsSync(filePath)) {
@@ -62,11 +115,16 @@ function startServer(rootDir, port) {
 }
 
 async function generatePDF() {
-    console.log('Starting PDF generation...');
+    console.log('🚀 Starting PDF generation...');
     
     const rootDir = join(__dirname, '..');
+    const { data: mergedData, hasPrivate } = loadData(rootDir);
+    const outputFilename = hasPrivate ? 'cv_florian_handke_private.pdf' : 'cv_florian_handke.pdf';
+    
+    console.log(`📄 Output: ${outputFilename}`);
+    
     const port = await findAvailablePort(3001);
-    const server = await startServer(rootDir, port);
+    const server = await startServer(rootDir, mergedData, port);
     
     let browser;
     
@@ -88,7 +146,7 @@ async function generatePDF() {
         
         // Generate PDF
         await page.pdf({
-            path: join(__dirname, '..', 'assets', 'pdf', 'cv_florian_handke.pdf'),
+            path: join(__dirname, '..', 'assets', 'pdf', outputFilename),
             format: 'A4',
             printBackground: true,
             margin: {
@@ -99,7 +157,7 @@ async function generatePDF() {
             }
         });
         
-        console.log('PDF generated successfully: assets/pdf/cv_florian_handke.pdf');
+        console.log(`✅ PDF generated successfully: assets/pdf/${outputFilename}`);
     } finally {
         if (browser) {
             await browser.close();

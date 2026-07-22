@@ -72,6 +72,18 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
+/* Private contact info section */
+.private-contact-info {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    font-size: 9pt;
+    line-height: 1.6;
+}
+
 /* Section headers */
 h2 {
     font-size: 14pt;

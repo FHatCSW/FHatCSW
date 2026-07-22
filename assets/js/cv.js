@@ -12,16 +12,72 @@ async function loadContent() {
 function renderCV(data) {
     const cvContent = document.getElementById('cv-content');
     
+    // Check if we have private data
+    const hasPrivateData = data.contact.address || data.personalInfo;
+    
+    // Build contact info - only show in main header if no private data
+    let contactInfo = '';
+    if (!hasPrivateData) {
+        contactInfo = `
+            <strong>Phone:</strong> ${data.contact.phone} &nbsp;|&nbsp;
+            <strong>Email:</strong> <a href="${data.contact.emailUrl}">${data.contact.email}</a> &nbsp;|&nbsp;
+            <strong>LinkedIn:</strong> <a href="${data.contact.linkedinUrl}" target="_blank">${data.contact.linkedin}</a>
+        `;
+    }
+    
+    // Add private contact section if data exists
+    let privateContactSection = '';
+    if (hasPrivateData) {
+        privateContactSection = '<div class="private-contact-info">';
+        
+        // Address
+        if (data.contact.address) {
+            privateContactSection += `
+                <div>
+                    <strong>Address:</strong><br>
+                    ${data.contact.address.street}<br>
+                    ${data.contact.address.postalCode} ${data.contact.address.city}<br>
+                    ${data.contact.address.country}
+                </div>
+            `;
+        }
+        
+        // Personal Info
+        if (data.personalInfo) {
+            privateContactSection += '<div>';
+            if (data.personalInfo.dateOfBirth) {
+                privateContactSection += `<strong>Date of Birth:</strong> ${data.personalInfo.dateOfBirth}<br>`;
+            }
+            if (data.personalInfo.placeOfBirth) {
+                privateContactSection += `<strong>Place of Birth:</strong> ${data.personalInfo.placeOfBirth}<br>`;
+            }
+            if (data.personalInfo.nationality) {
+                privateContactSection += `<strong>Nationality:</strong> ${data.personalInfo.nationality}`;
+            }
+            privateContactSection += '</div>';
+        }
+        
+        // Contact info (only shown in private section when private data exists)
+        privateContactSection += `
+            <div>
+                <strong>Phone:</strong> ${data.contact.phone}<br>
+                <strong>Email:</strong> ${data.contact.email}<br>
+                <strong>LinkedIn:</strong> ${data.contact.linkedin}
+            </div>
+        `;
+        
+        privateContactSection += '</div>';
+    }
+    
     cvContent.innerHTML = `
         <!-- Page 1 -->
         <div class="cv-header">
             <h1>${data.header.name}</h1>
             <p class="subtitle">${data.header.subtitle}</p>
             <div class="contact-info">
-                <strong>Phone:</strong> ${data.contact.phone} &nbsp;|&nbsp; 
-                <strong>Email:</strong> <a href="${data.contact.emailUrl}">${data.contact.email}</a> &nbsp;|&nbsp; 
-                <strong>LinkedIn:</strong> <a href="${data.contact.linkedinUrl}" target="_blank">${data.contact.linkedin}</a>
+                ${contactInfo}
             </div>
+            ${privateContactSection}
         </div>
 
         <div class="summary">
@@ -62,9 +118,7 @@ function renderCV(data) {
         <h2>Featured Project</h2>
         <div class="featured-project">
             <h3>Trustpoint – Open Source Trust Anchor</h3>
-            <p>Co-created and technically led the development of <strong>Trustpoint</strong>, an open-source trust anchor and PKI platform. 
-            Trustpoint manages digital machine identities and certificate lifecycles in industrial environments, supporting secure device onboarding, 
-            certificate issuance, renewal, revocation, and decommissioning. It operates locally in segmented, offline, or air-gapped OT networks.</p>
+            <p>Co-created and technically led the development of <strong>Trustpoint</strong>, an open-source trust anchor and PKI platform. Trustpoint manages digital machine identities and certificate lifecycles in industrial environments, supporting secure device onboarding, certificate issuance, renewal, revocation, and decommissioning. It operates locally in segmented, offline, or air-gapped OT networks.</p>
             <p><strong>GitHub:</strong> github.com/Trustpoint-Project/trustpoint</p>
         </div>
 

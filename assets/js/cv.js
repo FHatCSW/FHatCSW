@@ -72,12 +72,19 @@ function renderCV(data) {
     cvContent.innerHTML = `
         <!-- Page 1 -->
         <div class="cv-header">
-            <h1>${data.header.name}</h1>
-            <p class="subtitle">${data.header.subtitle}</p>
-            <div class="contact-info">
-                ${contactInfo}
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>${data.header.name}</h1>
+                    <p class="subtitle">${data.header.subtitle}</p>
+                    <div class="contact-info">
+                        ${contactInfo}
+                    </div>
+                    ${privateContactSection}
+                </div>
+                <div class="header-photo">
+                    <img src="${data.header.image.src}" alt="${data.header.image.alt}">
+                </div>
             </div>
-            ${privateContactSection}
         </div>
 
         <div class="summary">

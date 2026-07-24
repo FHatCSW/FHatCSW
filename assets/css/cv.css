@@ -47,6 +47,29 @@ body {
     border-bottom: 3px solid var(--black);
 }
 
+.cv-header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.cv-header .header-text {
+    flex: 1;
+}
+
+.cv-header .header-photo {
+    flex-shrink: 0;
+}
+
+.cv-header .header-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--white);
+}
+
 .cv-header h1 {
     font-size: 24pt;
     font-weight: 700;

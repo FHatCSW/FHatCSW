@@ -89,7 +89,7 @@ function renderCV(data) {
             <div class="skill-box">
                 <h3>${data.coreExpertise.appliedCryptography.title}</h3>
                 <ul>
-                    ${data.coreExpertise.appliedCryptography.items.slice(0, 8).map(item => `<li>${item}</li>`).join('')}
+                    ${data.coreExpertise.appliedCryptography.items.map(item => `<li>${item}</li>`).join('')}
                 </ul>
             </div>
             <div class="skill-box">
@@ -104,13 +104,13 @@ function renderCV(data) {
             <div class="skill-box">
                 <h3>${data.coreExpertise.iotConnectivity.title}</h3>
                 <ul>
-                    ${data.coreExpertise.iotConnectivity.items.slice(0, 7).map(item => `<li>${item}</li>`).join('')}
+                    ${data.coreExpertise.iotConnectivity.items.map(item => `<li>${item}</li>`).join('')}
                 </ul>
             </div>
             <div class="skill-box">
                 <h3>${data.coreExpertise.softwareEngineering.title}</h3>
                 <ul>
-                    ${data.coreExpertise.softwareEngineering.items.slice(0, 8).map(item => `<li>${item}</li>`).join('')}
+                    ${data.coreExpertise.softwareEngineering.items.map(item => `<li>${item}</li>`).join('')}
                 </ul>
             </div>
         </div>

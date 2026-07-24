@@ -15,13 +15,13 @@
     },
     "name": "Florian Handke",
     "subtitle": "Head of Industrial Security · Campus Schwarzwald · M.Sc. Mechanical Engineering",
-    "introduction": "Head of Industrial Security at Campus Schwarzwald, a cluster of companies in the mechanical engineering and manufacturing industries. Holding a Master's degree (M.Sc.) in Mechanical Engineering with a specialization in Production Engineering, I am responsible for ensuring the security of industrial machinery and components. My expertise focuses on Public Key Infrastructure (PKI), digital identities, and their applications in industrial environments."
+    "introduction": "Leading industrial security at Campus Schwarzwald, a cluster of companies in the mechanical engineering and manufacturing industries. With a Master's degree in Mechanical Engineering specialized in Production Engineering, I ensure the security of industrial machinery and components. My expertise focuses on Public Key Infrastructure (PKI), digital identities, and their applications in industrial environments."
   },
   "aboutMe": {
     "paragraphs": [
-      "I combine engineering pragmatism with technical expertise in applied cryptography and industrial cybersecurity. With a background in mechanical engineering, I understand how the industry works. I then moved into software and security, gaining in-depth knowledge through hands-on experience.",
-      "I thrive on taking ownership, leading technical teams, speaking at conferences, teaching students and engineers, and building solutions that solve real-world problems. I love details, thinking end-to-end, and presenting complex content to different audiences. I specialize in turning complex security concepts into practical engineering solutions that balance technical feasibility with cost-effectiveness—because security is always a tradeoff."
-    ]
+      "My background spans mechanical engineering, software, applied cryptography, and industrial cybersecurity. Starting out in mechanical engineering gave me a practical understanding of how industrial systems are designed, operated, and maintained. Over time, I moved into software and security, building my expertise through hands-on work on real technical challenges.",
+      "I enjoy taking responsibility for complex projects, leading technical teams, and helping others understand difficult topics—whether I’m speaking at a conference, teaching students and engineers, or working directly with a team. I tend to look at problems end to end and pay close attention to the details that matter. Much of my work involves turning complex security ideas into solutions that are practical, affordable, and realistic to implement. To me, good security is not about chasing perfection; it is about making the right tradeoffs for the situation."
+      ]
   },
   "coreExpertise": {
     "appliedCryptography": {
@@ -29,7 +29,8 @@
       "items": [
         "Public Key Infrastructure (PKI)",
         "Certificate Lifecycle Management",
-        "Device Identity & Secure Device Identity",
+        "Device Identity & Secure Device Provisioning",
+        "Cryptographic Architecture & Key Management",
         "Secure Boot & Secure Firmware Updates",
         "Code Signing",
         "Hardware Security Modules (HSMs)",
@@ -43,26 +44,30 @@
     "industrialSecurity": {
       "title": "Industrial Security",
       "items": [
+        "Secure-by-Design Product Development",
+        "Product Security Architecture",
+        "Threat Modeling & Risk Assessment",
         "IEC 62443 Compliance",
         "Cyber Resilience Act (CRA)",
         "NIS2 Directive",
         "Security Architecture & Risk Assessment",
         "Industrial IoT & OT Security",
-        "Expertise in IEEE 802.1 AR device identities (IDevID & LDevID)",
-        "Expertise in zero-touch onboarding (BRSKI, FDO)"
+        "Expertise in IEEE 802.1 AR device identities (IDevID & LDevID)"
       ]
     },
     "iotConnectivity": {
       "title": "IoT & Connectivity",
       "items": [
+        "Secure Device Onboarding & Provisioning",
         "OPC UA (Implemented GDS Push)",
         "MQTT Protocol",
         "Grafana & Visualization",
         "Telegraf Data Collection",
         "InfluxDB Time-Series Database",
-        "Node-RED (Published 2 NPM packages)",
+        "Node-RED (Published Two NPM packages)",
         "Mosquitto MQTT Broker",
         "Mender OTA Updates",
+        "Expertise in zero-touch onboarding (BRSKI, FDO)",
         "Raspberry Pi & ESP32 Development"
       ]
     },
@@ -294,8 +299,6 @@
     "I play football as a hobby.",
     "Hands-on engineer who loves taking action and building things.",
     "Every good concept starts with a sequence diagram.",
-    "Good user experience matters—even (especially!) in security software.",
-    "The world has lost a carpenter and an electrician in me—I'm an expert in building trade show exhibits.",
     "I probably have the right adapter for your plug."
   ],
   "impressions": [
